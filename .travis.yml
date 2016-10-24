@@ -16,5 +16,8 @@ before_install:
   # install neo4j
   - sh -c ./build/install-neo.sh
 
+  # install modules
+  - sh -c ./modules/$NEO_VERSION/install.sh
+
 notifications:
   email: "christophe@graphaware.com"
