@@ -4,6 +4,8 @@
         "graphaware/neo4j-php-client": "^4.6"
     },
     "autoload-dev": {
-        "GraphAware\\Elasticsearch\\Tests\\": "tests/"
+        "psr-4": {
+            "GraphAware\\Elasticsearch\\Tests\\": "tests/"
+        }
     }
 }
