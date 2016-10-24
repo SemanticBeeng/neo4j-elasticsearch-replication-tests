@@ -1,0 +1,20 @@
+language: php
+
+services:
+  - elasticsearch
+
+env:
+  NEO_VERSION: 3.0.3
+  NEO_VERSION: 3.0.6
+
+before_install:
+  - sudo apt-get update > /dev/null
+
+  # install oracle jdk 8
+  - sh -c ./build/install-jdk-8.sh
+
+  # install neo4j
+  - sh -c ./build/install-neo.sh
+
+notifications:
+  email: "christophe@graphaware.com"
