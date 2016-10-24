@@ -1,0 +1,1 @@
+## Neo4j to Elasticsearch tests in non-embedded mode
