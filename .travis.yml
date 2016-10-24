@@ -19,5 +19,8 @@ before_install:
   # install modules
   - sh -c ./modules/$NEO_VERSION/install.sh
 
+  # start neo
+  - sh -c ./build/start-neo.sh
+
 notifications:
   email: "christophe@graphaware.com"
